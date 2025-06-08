@@ -4,6 +4,11 @@ import { useEffect, useState } from "react"
 import { ArrowRight, Github, Star, Zap } from "lucide-react"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Blogs | Blog Starter App",
+  description: "All the blogs are written in MDX format, you can use this app to create your own blog easily.",
+};
+
 export default function LandingPage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isLoaded, setIsLoaded] = useState(false)
